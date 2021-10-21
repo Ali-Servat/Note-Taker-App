@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  width: fit-content;
+  margin: 20px auto;
+}
+form {
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 40px;
+}
+form .note {
+  display: flex;
+  justify-content: center;
+}
+form #note {
+  width: 400px;
+}
+form button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0px auto;
+  padding: 5px;
+}
+h3 {
+  width: fit-content;
+  margin: 20px auto;
+}
+ul {
+  display: grid;
+  grid-template-columns: 370px 370px;
+  gap: 10px;
+  width: 750px;
+  margin: 0px auto;
+  list-style-type: none;
+}
+li {
+  border: 1px solid black;
+  padding: 20px;
+  height: 100px;
+}
+li p {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 60px;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+li p::before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+li p::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}

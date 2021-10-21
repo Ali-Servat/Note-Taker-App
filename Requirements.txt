@@ -1,0 +1,13 @@
+#Heading
+
+#Add a new note:
+
+#textfield for writing comment
+
+#Add note button
+
+#a heading for each note which shows the number of note
+
+#note 
+
+#view details button for each li 
