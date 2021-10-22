@@ -3,6 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 h1,
 h2 {
   width: fit-content;
@@ -42,7 +47,7 @@ ul {
 li {
   border: 1px solid black;
   padding: 20px;
-  height: 100px;
+  height: 150px;
 }
 li p {
   overflow: hidden;
@@ -67,4 +72,30 @@ li p::after {
   height: 1em;
   margin-top: 0.2em;
   background: white;
+}
+.parentDiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(82, 82, 82);
+}
+.childDiv {
+  position: fixed;
+  width: 50%;
+  height: fit-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+  z-index: 2;
+  padding: 20px;
+}
+.childDiv button {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 5px;
 }
