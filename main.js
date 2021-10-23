@@ -20,6 +20,13 @@ addBtn.addEventListener('click',(e)=>{
     const deleteBtn = document.createElement('button');
     deleteBtn.innerHTML = 'X';
     li.appendChild(deleteBtn);
+    deleteBtn.addEventListener('click',(e)=>{
+        deleteBtn.parentNode.parentNode.removeChild(deleteBtn.parentNode);
+        let liList = document.getElementsByTagName('li');
+        for(let i=0 ; i < liList.length ; i++){
+            liList[i].childNodes[0].textContent = 'Note ' + (i+1);
+        }
+    })
     list.appendChild(li);
 
     viewAllBtn.addEventListener('click',()=>{
@@ -41,6 +48,3 @@ addBtn.addEventListener('click',(e)=>{
     });
 })
 
-const DisplayMessage = function(){
-    
-}
